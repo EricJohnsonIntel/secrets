@@ -1,0 +1,8 @@
+name: hello-world
+on: push
+jobs:
+  checklist:
+    runs-on: ubuntu-latest
+    steps:
+      - name: password
+        run: echo "Password - ${{ secrets.PASSWORD }}"
